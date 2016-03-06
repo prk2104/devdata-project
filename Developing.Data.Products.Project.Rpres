@@ -1,0 +1,25 @@
+Developing Data Products Project
+========================================================
+author: Peter Kay
+date: 6 March 2016
+autosize: true
+
+The application
+========================================================
+
+- My shinyapp associated with this project is located at https://prk2104.shinyapps.io/Project/
+- The application plots for miles per gallon for cars based on three different regressors.
+- It also allows the user to show the effect of outliers.
+
+Github repository
+========================================================
+server.R and ui.R
+
+- These two files that run the shiny application are posted on guthub at: https://github.com/prk2104/devdata-project.git
+
+The data
+========================================================
+- The data is based on the mtcars data set.  Which is summarized below:
+```{r}
+summary(mtcars)
+```
