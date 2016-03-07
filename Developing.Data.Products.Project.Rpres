@@ -13,9 +13,10 @@ The application
 
 Github repository
 ========================================================
-server.R and ui.R
 
-- These two files that run the shiny application are posted on guthub at: https://github.com/prk2104/devdata-project.git
+- The two files, server.R and ui.R, that run the shiny application are posted on guthub at: https://github.com/prk2104/devdata-project.git
+- This presentation, Developing Data Products Project.rpres, is hosted at http://rpubs.com/prk2104/devdata-project
+- There is also a file called ReadMe.html that provides documentation about how to operate the shiny application
 
 The data
 ========================================================
@@ -23,3 +24,7 @@ The data
 ```{r}
 summary(mtcars)
 ```
+
+Outliers
+========================================================
+We can see from the toggle switch that there appears to only one instance of outliers.
