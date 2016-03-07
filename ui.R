@@ -14,7 +14,10 @@ shinyUI(fluidPage(
                      "Transmission" = "am", 
                      "Gears" = "gear")),
     
-    checkboxInput("outliers", "Show outliers", FALSE)
+    checkboxInput("outliers", "Show outliers", FALSE),
+    br(),
+    p(strong(em("Documentation:",a("Miles per Gallon Boxplots by Selected Variable",href="ReadMe.html")))),
+    p(strong(em("Github link:",a("Link to github repo housing ui.R, server.R and the Rpres",href="https://github.com/prk2104/devdata-project"))))
   ),
   
   # Show the caption and plot of the requested variable against mpg
