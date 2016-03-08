@@ -7,7 +7,7 @@ autosize: true
 The application
 ========================================================
 
-- My shinyapp associated with this project is located at https://prk2104.shinyapps.io/Project/
+- My shinyapp associated with this project is located at https://prk2104.shinyapps.io/Desktop/
 - The application plots for selected variables for cars based on selected independent variables.
 - It also allows the user to change the color of the plot points.
 
@@ -15,7 +15,7 @@ Github repository
 ========================================================
 
 - The two files, server.R and ui.R, that run the shiny application are posted on guthub at: https://github.com/prk2104/devdata-project.git
-- This presentation, Developing Data Products Project.rpres, is hosted at http://rpubs.com/prk2104/devdata-project
+- This presentation, Developing Data Products Project.rpres, is hosted at http://rpubs.com/prk2104/devdata2
 - There is also a file called ReadMe.html that provides documentation about how to operate the shiny application
 
 The data
