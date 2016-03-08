@@ -1,28 +1,29 @@
 library(shiny)
 library(datasets)
 
-
-mpgData <- mtcars
-mpgData$am <- factor(mpgData$am, labels = c("Automatic", "Manual"))
-
 shinyServer(function(input, output) {
   
   # Compute the forumla text in a reactive expression since it is 
   # shared by the output$caption and output$mpgPlot expressions
-  formulaText <- reactive({
-    paste("mpg ~", input$variable)
+
+  formulaText1 <- reactive({
+    paste(input$variable1," ~ ", input$variable)
   })
+
   
   # Return the formula text for printing as a caption
   output$caption <- renderText({
-    formulaText()
+  
+    formulaText1()
   })
   
-  # Generate a plot of the requested variable against mpg and only 
-  # include outliers if requested
+  # Generate a plot of the requested variable against requested variable 
+
   output$mpgPlot <- renderPlot({
-    boxplot(as.formula(formulaText()), 
-            data = mpgData,
-            outline = input$outliers)
-  })
+
+    attach(mtcars)
+        plot(as.formula(formulaText1()),type="point",col=input$color,cex=2,pch=19)
+          })
+
+
 })
