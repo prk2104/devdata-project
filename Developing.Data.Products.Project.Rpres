@@ -8,8 +8,8 @@ The application
 ========================================================
 
 - My shinyapp associated with this project is located at https://prk2104.shinyapps.io/Project/
-- The application plots for miles per gallon for cars based on three different regressors.
-- It also allows the user to show the effect of outliers.
+- The application plots for selected variables for cars based on selected independent variables.
+- It also allows the user to change the color of the plot points.
 
 Github repository
 ========================================================
@@ -25,6 +25,6 @@ The data
 summary(mtcars)
 ```
 
-Outliers
+Options
 ========================================================
-We can see from the toggle switch that there appears to only one instance of outliers.
+We can see from the switches that there options for the x-variable, the y, variable, the color of the points.  On the basis of these selection, an appropriately labeled scatterplot is created.
